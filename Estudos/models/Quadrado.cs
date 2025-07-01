@@ -8,7 +8,12 @@ namespace Estudos.models
 {
     internal class Quadrado
     {
-        public double A { get; set; }
-        public double B { get; set; }
+        public double A;
+        public double B;
+
+        public double Area()
+        {
+            return A * B;
+        }
     }
 }

@@ -1,23 +1,24 @@
-﻿namespace Estudos
+﻿using Estudos.Exercicio_1;
+
+namespace Estudos
 {
     internal class Program
     {
         static void Main(string[] args)
         {
-            EntradaDeDados entrada = new EntradaDeDados();
-            //Console.WriteLine(entrada.PerguntarNome());
 
-            Console.WriteLine(entrada.calcularGeometria());
+            //Calcular a area da geometria
+            EntradaDeDados entradaDeDados = new EntradaDeDados();
+            entradaDeDados.calcularGeometria();
 
+            //Recebe dois nomes de pessoa e retorna a mais velha
+            //CompararPessoa compararPessoa = new CompararPessoa();
+            //compararPessoa.compararPessoaMaisVelha();
 
+            //Recebe dois nomes de pessoa e salario e retorna a media do salario
+            //SalarioFuncionarios salarioFuncionarios = new SalarioFuncionarios();
+            //salarioFuncionarios.SalarioMedio();
 
-            //Double b = 6.0;
-            //Double B = 8.0;
-            //Double h = 5.0;
-
-            //Double area = (b+ B) /2 * h;
-
-            //Console.WriteLine("Área :" + area);
         }
     }
 }

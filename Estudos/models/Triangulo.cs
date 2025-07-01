@@ -8,9 +8,15 @@ namespace Estudos.models
 {
     internal class Triangulo
     {
-        public double A { get; set; }
-        public double B { get; set; }
-        public double C { get; set; }
+        public double A;
+        public double B;
+        public double C;
+
+        public double Area()
+        {
+            double P = (A + B + C) / 2;
+           return Math.Sqrt(P * (P - A) * (P - B) * (P - C));
+        }
 
     }
 }

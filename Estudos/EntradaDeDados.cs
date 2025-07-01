@@ -9,23 +9,20 @@ namespace Estudos
 {
     internal class EntradaDeDados
     {
-        private string area;
-
-        public String PerguntarNome()
+        public string PerguntarNome()
         {
             Console.WriteLine("Informe seu nome: ");
-            String nome = Console.ReadLine();
+            string nome = Console.ReadLine();
             Console.WriteLine("Informe seu sobrenome: ");
-            String sobreNome = Console.ReadLine();
+            string sobreNome = Console.ReadLine();
 
-            String resultado = "Seu nome é " + nome + sobreNome;
+            string resultado = "Seu nome é " + nome + sobreNome;
             return resultado;
         }
 
 
-        public String calcularGeometria()
+        public void calcularGeometria()
         {
-            Geometria geometria = new Geometria();
             Console.WriteLine("Digite o numero da Geometria que deseja calcular:");
             Console.WriteLine("1 : Triangulo");
             Console.WriteLine("2 : Quadrado");
@@ -43,19 +40,21 @@ namespace Estudos
                         triangulo.B = double.Parse(Console.ReadLine());
                         Console.WriteLine("Digite o terceiro numero: ");
                         triangulo.C = double.Parse(Console.ReadLine());
-                        double area = geometria.triangulo(triangulo);
-                        return area.ToString();
+                        double Area = triangulo.Area();
+                        Console.WriteLine("A area do triangulo é: " + Area);
+                        break;
                     }
                 case 2:
                     {
-                        Console.WriteLine("Vamos calcular a area do triangulo");
+                        Console.WriteLine("Vamos calcular a area do quadrado");
                         Quadrado quadrado = new Quadrado();
                         Console.WriteLine("Digite o primeiro numero: ");
                         quadrado.A = double.Parse(Console.ReadLine());
                         Console.WriteLine("Digite o segundo numero:");
                         quadrado.B = double.Parse(Console.ReadLine());
-                        double area = geometria.quadrado(quadrado);
-                        return area.ToString();
+                        double Area = quadrado.Area();
+                        Console.WriteLine("A area do quadrado é: " + Area);
+                        break;
                     }
                 default:
                     {
@@ -65,7 +64,6 @@ namespace Estudos
 
             }
 
-            return area;
         }
     }
 
