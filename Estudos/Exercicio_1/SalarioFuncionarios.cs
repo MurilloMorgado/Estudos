@@ -16,12 +16,12 @@ namespace Estudos.Exercicio_1
 
             Console.WriteLine("Informe o nome da primeira pessoa");
             A.Nome = Console.ReadLine();
-            Console.WriteLine("Qual o salario de : " + A.Nome);
+            Console.WriteLine("Qual o salario de " + A.Nome + " ?");
             A.Salario = double.Parse(Console.ReadLine());
 
             Console.WriteLine("Informe o nome da segunda pessoa");
             B.Nome = Console.ReadLine();
-            Console.WriteLine("Qual o salario de : " + B.Nome);
+            Console.WriteLine("Qual o salario de " + B.Nome + " ?");
             B.Salario = double.Parse(Console.ReadLine());
 
             double SalarioMedio = (A.Salario + B.Salario) / 2;
