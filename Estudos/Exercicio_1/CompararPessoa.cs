@@ -31,9 +31,10 @@ namespace Estudos.Exercicio_1
             if (X.Idade > Y.Idade)
             {
                 Console.WriteLine(X.Nome + " é mais velho(a);");
+                return;
             }
 
-            Console.WriteLine(X.Nome + " é mais velho(a);");
+            Console.WriteLine(Y.Nome + " é mais velho(a);");
         }
     }
 }

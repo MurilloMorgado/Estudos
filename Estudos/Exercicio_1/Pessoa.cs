@@ -10,5 +10,7 @@ namespace Estudos.Exercicio_1
     {
         public string Nome { get; set; }
         public int Idade { get; set; }
+
+        public double Salario { get; set; }
     }
 }
