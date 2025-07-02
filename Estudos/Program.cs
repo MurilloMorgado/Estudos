@@ -1,4 +1,4 @@
-﻿using Estudos.Exercicio_1;
+﻿using Estudos.exercicios.Exercicio_1;
 
 namespace Estudos
 {

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Estudos.Exercicio_1
+namespace Estudos.exercicios.Exercicio_1
 {
     internal class SalarioFuncionarios
     {
