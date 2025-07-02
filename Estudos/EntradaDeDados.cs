@@ -13,32 +13,39 @@ namespace Estudos
     {
         public void EscolherAcao()
         {
+            ControleDeEstoque controleDeEstoque = new ControleDeEstoque();
+            ExercicioAula45 exercicioAula45 = new ExercicioAula45();
+
+
             int id = 0;
             Console.WriteLine("Digite o numero que deseja executar");
             Console.WriteLine("1 - Controle de Estoque / Total em Estoque");
             Console.WriteLine("2 - Areas do triangulo");
             Console.WriteLine("3 - Calcular Salario");
-            
+            Console.WriteLine("4 - Nota final de Aluno");
+
             id = int.Parse(Console.ReadLine());
             Console.Clear();
             switch (id)
             {
                 case 1:
                     {
-                        ControleDeEstoque controleDeEstoque = new ControleDeEstoque();
                         controleDeEstoque.TotalEmEstoque();
                         break;
                     }
                 case 2:
                     {
-                        ExercicioAula45 exercicioAula45 = new ExercicioAula45();
                         exercicioAula45.AreasDoTriangulo();
                         break;
                     }
                 case 3:
                     {
-                        ExercicioAula45 exercicioAula45 = new ExercicioAula45();
                         exercicioAula45.CalcularSalarioFinal();
+                        break;
+                    }
+                case 4:
+                    {
+                        exercicioAula45.CalularNotaFinalDeAluno();
                         break;
                     }
                 default:

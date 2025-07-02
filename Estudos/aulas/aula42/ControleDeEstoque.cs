@@ -40,7 +40,7 @@ namespace Estudos.aulas.aula42
             Console.WriteLine("1 - Sim ");
             Console.WriteLine("2 - Não ");
             int remover = int.Parse(Console.ReadLine());
-            if(remover == 1)
+            if (remover == 1)
             {
                 Console.WriteLine("Informe a quantidade que deseja remover:");
                 int quantidadeRemovida = int.Parse(Console.ReadLine());
@@ -49,8 +49,10 @@ namespace Estudos.aulas.aula42
                 Console.WriteLine();
 
             }
+
             Console.WriteLine();
             Console.WriteLine("Programa finalizando 3...2...1");
+
         }
 
     }

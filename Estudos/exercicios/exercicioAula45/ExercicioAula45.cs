@@ -45,10 +45,34 @@ namespace Estudos.exercicios.exercicioAula45
 
             Console.WriteLine("Dados Atualizados: " + funcionario.ToString());
         }
-    
         public void CalularNotaFinalDeAluno()
         {
+            Console.Clear();
+            Aluno aluno = new Aluno();
+            Console.WriteLine("Informe o nome do Aluno");
+            aluno.Nome = Console.ReadLine();
+            Console.WriteLine("Informe a primeira nota");
+            aluno.Nota1 = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
 
+            Console.WriteLine("Informe a segunda nota");
+            aluno.Nota2 = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+
+            Console.WriteLine("Informe a terceira nota");
+            aluno.Nota3 = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+
+            double notaFinal = aluno.NotaFinal();
+            Console.WriteLine("Nota Final = " + notaFinal);
+            bool aprovado = aluno.Aprovado(notaFinal);
+
+            if (aprovado == true)
+            {
+                Console.WriteLine("Aluno aprovado");
+            }
+            else
+            {
+                double notaRestante = aluno.NotaRestante();
+                Console.WriteLine("Aluno reprovado, faltaram " + notaRestante + " pontos");
+            };
         }
     }
 
