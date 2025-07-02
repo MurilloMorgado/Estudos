@@ -17,8 +17,10 @@ namespace Estudos
             Console.WriteLine("Digite o numero que deseja executar");
             Console.WriteLine("1 - Controle de Estoque / Total em Estoque");
             Console.WriteLine("2 - Areas do triangulo");
+            Console.WriteLine("3 - Calcular Salario");
+            
             id = int.Parse(Console.ReadLine());
-
+            Console.Clear();
             switch (id)
             {
                 case 1:
@@ -30,7 +32,13 @@ namespace Estudos
                 case 2:
                     {
                         ExercicioAula45 exercicioAula45 = new ExercicioAula45();
-                        exercicioAula45.areasDoTriangulo();
+                        exercicioAula45.AreasDoTriangulo();
+                        break;
+                    }
+                case 3:
+                    {
+                        ExercicioAula45 exercicioAula45 = new ExercicioAula45();
+                        exercicioAula45.CalcularSalarioFinal();
                         break;
                     }
                 default:
