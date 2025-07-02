@@ -1,4 +1,5 @@
-﻿using Estudos.models;
+﻿using Estudos.aulas.aula42;
+using Estudos.models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,6 +10,29 @@ namespace Estudos
 {
     internal class EntradaDeDados
     {
+        public void EscolherAcao()
+        {
+            int id = 0;
+            Console.WriteLine("Digite o numero que deseja executar");
+            Console.WriteLine("1 - Controle de Estoque / Total em Estoque");
+            id = int.Parse(Console.ReadLine());
+
+            switch (id)
+            {
+                case 1:
+                    {
+                        ControleDeEstoque controleDeEstoque = new ControleDeEstoque();
+                        controleDeEstoque.TotalEmEstoque();
+                        break;
+                    }
+                default:
+                    {
+                        break;
+                    }
+            }
+        }
+
+        //Essas duas funçoes vao ser removidas e transferidas para seus respectivos lugares posteriormente
         public string PerguntarNome()
         {
             Console.WriteLine("Informe seu nome: ");
