@@ -1,4 +1,5 @@
 ﻿using Estudos.aulas.aula42;
+using Estudos.exercicios.exercicioAula45;
 using Estudos.models;
 using System;
 using System.Collections.Generic;
@@ -15,6 +16,7 @@ namespace Estudos
             int id = 0;
             Console.WriteLine("Digite o numero que deseja executar");
             Console.WriteLine("1 - Controle de Estoque / Total em Estoque");
+            Console.WriteLine("2 - Areas do triangulo");
             id = int.Parse(Console.ReadLine());
 
             switch (id)
@@ -23,6 +25,12 @@ namespace Estudos
                     {
                         ControleDeEstoque controleDeEstoque = new ControleDeEstoque();
                         controleDeEstoque.TotalEmEstoque();
+                        break;
+                    }
+                case 2:
+                    {
+                        ExercicioAula45 exercicioAula45 = new ExercicioAula45();
+                        exercicioAula45.areasDoTriangulo();
                         break;
                     }
                 default:
@@ -57,7 +65,7 @@ namespace Estudos
                 case 1:
                     {
                         Console.WriteLine("Vamos calcular a area do triangulo");
-                        Triangulo triangulo = new Triangulo();
+                        models.Triangulo triangulo = new models.Triangulo();
                         Console.WriteLine("Digite o primeiro numero: ");
                         triangulo.A = double.Parse(Console.ReadLine());
                         Console.WriteLine("Digite o segundo numero: ");
