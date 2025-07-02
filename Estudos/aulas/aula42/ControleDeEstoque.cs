@@ -14,7 +14,7 @@ namespace Estudos.aulas.aula42
             Console.WriteLine("Digite o nome do produto:");
             produto.Nome = Console.ReadLine();
 
-            Console.WriteLine("Digite o preço do produto " +  produto.Nome + ":");
+            Console.WriteLine("Digite o preço do produto " + produto.Nome + ":");
             produto.Preco = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
 
             Console.WriteLine("Digite a quantidade em estoque:");
@@ -22,6 +22,18 @@ namespace Estudos.aulas.aula42
 
             Console.WriteLine("Dados do produto: " + produto);
 
+            Console.WriteLine("Deseja adicionar um produto ao estoque ? ");
+            Console.WriteLine("1 - Sim ");
+            Console.WriteLine("2 - Não ");
+            int adicionar = int.Parse(Console.ReadLine());
+            if (adicionar == 1)
+            {
+                Console.WriteLine("Informe a quantidade que deseja adcionar: ");
+                int quantidadeAdcionada = int.Parse(Console.ReadLine());
+                produto.AdicionarProdutoEmEstoque(quantidadeAdcionada);
+                Console.WriteLine("Dados do produto: " + produto);
+
+            }
         }
 
     }

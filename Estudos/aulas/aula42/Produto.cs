@@ -13,6 +13,11 @@ namespace Estudos.aulas.aula42
             return Preco * Quantidade;
         }
 
+        public void AdicionarProdutoEmEstoque(int quant)
+        {
+            Quantidade = quant + Quantidade;
+        }
+
         public override string ToString()
         {
             return Nome
