@@ -18,6 +18,10 @@ namespace Estudos.aulas.aula42
             Quantidade = quant + Quantidade;
         }
 
+        public void RemoverProdutoEmEstoque(int quant)
+        {
+            Quantidade = Quantidade - quant;
+        }
         public override string ToString()
         {
             return Nome

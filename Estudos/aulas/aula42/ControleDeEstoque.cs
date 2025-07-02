@@ -32,8 +32,25 @@ namespace Estudos.aulas.aula42
                 int quantidadeAdcionada = int.Parse(Console.ReadLine());
                 produto.AdicionarProdutoEmEstoque(quantidadeAdcionada);
                 Console.WriteLine("Dados do produto: " + produto);
+                Console.WriteLine();
 
             }
+
+            Console.WriteLine("Deseja remover um produto ao estoque ? ");
+            Console.WriteLine("1 - Sim ");
+            Console.WriteLine("2 - Não ");
+            int remover = int.Parse(Console.ReadLine());
+            if(remover == 1)
+            {
+                Console.WriteLine("Informe a quantidade que deseja remover:");
+                int quantidadeRemovida = int.Parse(Console.ReadLine());
+                produto.RemoverProdutoEmEstoque(quantidadeRemovida);
+                Console.WriteLine("Dados do produto: " + produto);
+                Console.WriteLine();
+
+            }
+            Console.WriteLine();
+            Console.WriteLine("Programa finalizando 3...2...1");
         }
 
     }
