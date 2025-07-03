@@ -1,4 +1,5 @@
 ﻿using Estudos.aulas.aula42;
+using Estudos.aulas.aula46;
 using Estudos.exercicios.exercicioAula45;
 using Estudos.models;
 using System;
@@ -15,6 +16,7 @@ namespace Estudos
         {
             ControleDeEstoque controleDeEstoque = new ControleDeEstoque();
             ExercicioAula45 exercicioAula45 = new ExercicioAula45();
+            Aula46 aula46 = new Aula46();
 
             ExibirMenu();
 
@@ -22,6 +24,10 @@ namespace Estudos
             Console.Clear();
             switch (id)
             {
+                case 0:
+                    {
+                        break;
+                    }
                 case 1:
                     {
                         controleDeEstoque.TotalEmEstoque();
@@ -42,6 +48,11 @@ namespace Estudos
                         exercicioAula45.CalularNotaFinalDeAluno();
                         break;
                     }
+                case 5:
+                    {
+                        aula46.CalcularCircunferencia();
+                        break;
+                    }
                 default:
                     {
                         Console.WriteLine("Opção invalida");
@@ -52,12 +63,15 @@ namespace Estudos
 
         public void ExibirMenu()
         {
-            Console.WriteLine("Digite o número que deseja executar:");
+            Console.WriteLine("Menu de opções");
+            Console.WriteLine("0 - Sair");
             Console.WriteLine("1 - Controle de Estoque");
             Console.WriteLine("2 - Áreas do Triângulo");
             Console.WriteLine("3 - Calcular Salário");
             Console.WriteLine("4 - Nota final de Aluno");
+            Console.WriteLine("5 - Calcular circunferêrencia");
             Console.WriteLine();
+            Console.Write("Digite o número que deseja executar:");
         }
 
         //Essas duas funçoes vao ser removidas e transferidas para seus respectivos lugares posteriormente
