@@ -19,7 +19,7 @@ namespace Estudos.aulas.aula42
             int quantidade = int.Parse(Console.ReadLine());
 
             Produto produto = new Produto(nome, preco, quantidade);
-
+            
             Console.WriteLine("Dados do produto: " + produto);
 
             Console.WriteLine("Deseja adicionar um produto ao estoque ? ");
