@@ -16,15 +16,9 @@ namespace Estudos
             ControleDeEstoque controleDeEstoque = new ControleDeEstoque();
             ExercicioAula45 exercicioAula45 = new ExercicioAula45();
 
+            ExibirMenu();
 
-            int id = 0;
-            Console.WriteLine("Digite o numero que deseja executar");
-            Console.WriteLine("1 - Controle de Estoque / Total em Estoque");
-            Console.WriteLine("2 - Areas do triangulo");
-            Console.WriteLine("3 - Calcular Salario");
-            Console.WriteLine("4 - Nota final de Aluno");
-
-            id = int.Parse(Console.ReadLine());
+            int id = int.Parse(Console.ReadLine());
             Console.Clear();
             switch (id)
             {
@@ -50,9 +44,20 @@ namespace Estudos
                     }
                 default:
                     {
+                        Console.WriteLine("Opção invalida");
                         break;
                     }
             }
+        }
+
+        public void ExibirMenu()
+        {
+            Console.WriteLine("Digite o número que deseja executar:");
+            Console.WriteLine("1 - Controle de Estoque");
+            Console.WriteLine("2 - Áreas do Triângulo");
+            Console.WriteLine("3 - Calcular Salário");
+            Console.WriteLine("4 - Nota final de Aluno");
+            Console.WriteLine();
         }
 
         //Essas duas funçoes vao ser removidas e transferidas para seus respectivos lugares posteriormente
