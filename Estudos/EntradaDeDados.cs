@@ -2,6 +2,7 @@
 using Estudos.aulas.aula46;
 using Estudos.exercicios.exercicioAula45;
 using Estudos.exercicios.exercicioAula48;
+using Estudos.exercicios.exercicioAula60;
 using Estudos.models;
 using System;
 using System.Collections.Generic;
@@ -19,6 +20,7 @@ namespace Estudos
             ExercicioAula45 exercicioAula45 = new ExercicioAula45();
             Aula46 aula46 = new Aula46();
             ExercicioAula48 exercicioAula48 = new ExercicioAula48();
+            ExercicioAula60 exercicioAula60 = new ExercicioAula60();
 
             ExibirMenu();
 
@@ -60,6 +62,11 @@ namespace Estudos
                         exercicioAula48.CalcularValorAPargar();
                         break;
                     }
+                case 7:
+                    {
+                        exercicioAula60.Banco();
+                        break;
+                    }
                 default:
                     {
                         Console.WriteLine("Opção invalida");
@@ -78,6 +85,7 @@ namespace Estudos
             Console.WriteLine("4 - Nota final de Aluno");
             Console.WriteLine("5 - Calcular circunferêrencia");
             Console.WriteLine("6 - Calcular pagamento");
+            Console.WriteLine("7 - Conta Bancaria");
             Console.WriteLine();
             Console.Write("Digite o número que deseja executar:");
         }

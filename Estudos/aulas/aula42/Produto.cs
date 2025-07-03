@@ -14,7 +14,7 @@ namespace Estudos.aulas.aula42
             Preco = preco;
             Quantidade = quantidade;
         }
-
+        
         public string Nome
         {
             get { return _nome; }
