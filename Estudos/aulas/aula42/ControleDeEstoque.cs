@@ -7,18 +7,18 @@ namespace Estudos.aulas.aula42
     {
         public void TotalEmEstoque()
         {
-            Produto produto = new Produto();
 
             Console.WriteLine("Informe os dados do produto");
+            Console.Write("Digite o nome do produto: ");
+            string nome = Console.ReadLine();
 
-            Console.WriteLine("Digite o nome do produto:");
-            produto.Nome = Console.ReadLine();
+            Console.Write("Digite o preço do produto " + nome + ":");
+            double preco = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
 
-            Console.WriteLine("Digite o preço do produto " + produto.Nome + ":");
-            produto.Preco = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+            Console.Write("Digite a quantidade em estoque:");
+            int quantidade = int.Parse(Console.ReadLine());
 
-            Console.WriteLine("Digite a quantidade em estoque:");
-            produto.Quantidade = int.Parse(Console.ReadLine());
+            Produto produto = new Produto(nome, preco, quantidade);
 
             Console.WriteLine("Dados do produto: " + produto);
 
@@ -26,6 +26,7 @@ namespace Estudos.aulas.aula42
             Console.WriteLine("1 - Sim ");
             Console.WriteLine("2 - Não ");
             int adicionar = int.Parse(Console.ReadLine());
+            Console.Clear();
             if (adicionar == 1)
             {
                 Console.WriteLine("Informe a quantidade que deseja adcionar: ");
@@ -40,6 +41,7 @@ namespace Estudos.aulas.aula42
             Console.WriteLine("1 - Sim ");
             Console.WriteLine("2 - Não ");
             int remover = int.Parse(Console.ReadLine());
+            Console.Clear();
             if (remover == 1)
             {
                 Console.WriteLine("Informe a quantidade que deseja remover:");
