@@ -1,6 +1,7 @@
 ﻿using Estudos.aulas.aula42;
 using Estudos.aulas.aula46;
 using Estudos.exercicios.exercicioAula45;
+using Estudos.exercicios.exercicioAula48;
 using Estudos.models;
 using System;
 using System.Collections.Generic;
@@ -17,6 +18,7 @@ namespace Estudos
             ControleDeEstoque controleDeEstoque = new ControleDeEstoque();
             ExercicioAula45 exercicioAula45 = new ExercicioAula45();
             Aula46 aula46 = new Aula46();
+            ExercicioAula48 exercicioAula48 = new ExercicioAula48();
 
             ExibirMenu();
 
@@ -53,6 +55,11 @@ namespace Estudos
                         aula46.CalcularCircunferencia();
                         break;
                     }
+                case 6:
+                    {
+                        exercicioAula48.CalcularValorAPargar();
+                        break;
+                    }
                 default:
                     {
                         Console.WriteLine("Opção invalida");
@@ -70,6 +77,7 @@ namespace Estudos
             Console.WriteLine("3 - Calcular Salário");
             Console.WriteLine("4 - Nota final de Aluno");
             Console.WriteLine("5 - Calcular circunferêrencia");
+            Console.WriteLine("6 - Calcular pagamento");
             Console.WriteLine();
             Console.Write("Digite o número que deseja executar:");
         }
