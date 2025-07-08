@@ -1,5 +1,6 @@
 ﻿using Estudos.aulas.aula42;
 using Estudos.aulas.aula46;
+using Estudos.aulas.aula69;
 using Estudos.exercicios.exercicioAula45;
 using Estudos.exercicios.exercicioAula48;
 using Estudos.exercicios.exercicioAula60;
@@ -21,6 +22,7 @@ namespace Estudos
             Aula46 aula46 = new Aula46();
             ExercicioAula48 exercicioAula48 = new ExercicioAula48();
             ExercicioAula60 exercicioAula60 = new ExercicioAula60();
+            Aula69 aula69 = new Aula69();
 
             ExibirMenu();
 
@@ -67,6 +69,11 @@ namespace Estudos
                         exercicioAula60.Banco();
                         break;
                     }
+                case 8:
+                    {
+                        aula69.CalcularMediaDeAltura();
+                        break;
+                    }
                 default:
                     {
                         Console.WriteLine("Opção invalida");
@@ -86,6 +93,7 @@ namespace Estudos
             Console.WriteLine("5 - Calcular circunferêrencia");
             Console.WriteLine("6 - Calcular pagamento");
             Console.WriteLine("7 - Conta Bancaria");
+            Console.WriteLine("8 - Calcular Media de alturas");
             Console.WriteLine();
             Console.Write("Digite o número que deseja executar:");
         }
