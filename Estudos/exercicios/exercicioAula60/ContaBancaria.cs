@@ -33,7 +33,8 @@ namespace Estudos.exercicios.exercicioAula60
 
         public void Saque(double saque)
         {
-            Saldo -= saque;
+            double taxa = 5;
+            Saldo -= (saque + taxa);
         }
 
         public string ToString()
