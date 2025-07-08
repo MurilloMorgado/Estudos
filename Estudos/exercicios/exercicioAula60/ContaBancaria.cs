@@ -21,9 +21,9 @@ namespace Estudos.exercicios.exercicioAula60
             NumeroConta = numeroConta;
         }
 
-        public ContaBancaria(int numeroConta, string nome, double saldo) : this(numeroConta, nome)
+        public ContaBancaria(int numeroConta, string nome, double depositoInicial) : this(numeroConta, nome)
         {
-            Saldo = saldo;
+            Deposito(depositoInicial);
         }
 
         public void Deposito(double depoisto)
@@ -37,7 +37,7 @@ namespace Estudos.exercicios.exercicioAula60
             Saldo -= (saque + taxa);
         }
 
-        public string ToString()
+        public override string ToString()
         {
             return "Conta"
                 + NumeroConta

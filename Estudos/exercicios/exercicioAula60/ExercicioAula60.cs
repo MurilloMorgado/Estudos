@@ -21,8 +21,8 @@ namespace Estudos.exercicios.exercicioAula60
             string titular = Console.ReadLine();
 
             Console.Write("Haverá depósito iniciar (s/n)? ");
-            string isVerdadeiro = Console.ReadLine();
-            if (isVerdadeiro == "s")
+            char resp = char.Parse(Console.ReadLine());
+            if (resp == 's' || resp == 'S')
             {
                 Console.Write("Informe o valor de depósito inicial: ");
                 double depositoInicial = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
